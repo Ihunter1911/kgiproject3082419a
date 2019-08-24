@@ -72,7 +72,8 @@ from sklearn.ensemble import RandomForestClassifier
 
 app = Flask(__name__)
 
-
+import joblib 
+model = joblib.load('model.pkl')
 
 
 @app.route('/')
